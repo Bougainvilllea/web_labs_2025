@@ -1,0 +1,25 @@
+.theme-toggle {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  @include transition(all);
+  @include flex-center;
+  gap: 8px;
+  
+  &:hover {
+    background: var(--primary-dark);
+    transform: scale(1.05);
+  }
+  
+  .theme-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  [data-theme="dark"] & .theme-icon {
+    transform: rotate(180deg);
+  }
+}

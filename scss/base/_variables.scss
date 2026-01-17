@@ -1,0 +1,20 @@
+$primary-color: #bd4a4a !default;
+$primary-dark: #99221e !default;
+$primary-light: #cc6a6a !default;
+$bg-light: #ffeaea !default;
+$text-color: #333 !default;
+$white: #fff !default;
+$surface: #fff !default;
+$border: #e2e8f0 !default;
+
+:root {
+  // Светлая тема (по умолчанию)
+  --primary-color: #{$primary-color};
+  --primary-dark: #{$primary-dark};
+  --primary-light: #{$primary-light};
+  --bg-light: #{$bg-light};
+  --text-color: #{$text-color};
+  --white: #{$white};
+  --surface: #{$surface};
+  --border: #{$border};
+}

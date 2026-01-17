@@ -1,0 +1,172 @@
+// Base
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/typography';
+
+// Utils
+@import 'utils/mixins';
+
+// Layout
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/footer';
+
+// Components
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/modal';
+@import 'components/navigation';
+
+// Pages
+@import 'pages/home';
+
+// Responsive styles
+@import 'utils/mixins';
+
+// Themes
+
+@import 'themes/themes';
+@import 'components/theme-toggle';
+
+@include responsive(tablet) {
+  body {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .theme-toggle {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@include responsive(mobile) {
+  body {
+    padding: 10px;
+  }
+  
+  header {
+    padding: 20px 0;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    
+    &.active {
+      display: flex;
+    }
+  }
+  
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  section {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    order: -1;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .project-img {
+    height: 180px;
+  }
+  
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@include responsive(small-mobile) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .project-img {
+    height: 160px;
+  }
+  
+  footer {
+    padding: 20px 15px;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+}

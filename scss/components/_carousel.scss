@@ -1,0 +1,33 @@
+.skills-carousel {
+  position: relative;
+  margin-top: 25px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  @include border-radius;
+  @include box-shadow(0 2px 10px rgba(0, 0, 0, 0.1));
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 20px;
+  background-color: $bg-light;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  @include border-radius;
+  @include box-shadow;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}

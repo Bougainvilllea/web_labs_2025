@@ -1,0 +1,10 @@
+header {
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+  color: var(--white);
+  margin-bottom: 20px;
+  @include border-radius;
+  @include box-shadow;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  },
+  "scripts": {
+    "build-css": "sass main.scss dist/style.css",
+    "watch-css": "sass --watch main.scss dist/style.css"
+  }
+}
