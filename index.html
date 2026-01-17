@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио студента</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключена библиотека -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Кнопка "Вверх" -->
+    <div id="scrollToTop" class="scroll-top-btn">↑</div>
+    
+    <header>
+        <h1>Бердникова Елизавета</h1>
+        <p>ФИТ-231</p>
+    </header>
+    
+    <!-- Выпадающее меню для мобилок или сильно сжатого окна -->
+    <nav>
+        <div class="mobile-menu-toggle">
+            <span>Меню</span>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Я студент. Иногда с чувством юмора.</p>
+                <p><b>- Циля! Шо ж ви не спрашиваете,как я живу?</b></p>
+                <p><b>- Роза, как ви живете?</b></p>
+                <p><b>- Ой, Циля, и не спрашивайте!</b></p>
+                <p>В свободное время сижу в ВК.</p>
+            </div>
+            <div class="profile-img">
+                <img src="image/1.png" alt="Фото профиля">
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Мои навыки</h2>
+        <!-- Карусель навыков -->
+        <div class="skills-carousel">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Заполняем через jQuery -->
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-prev">←</button>
+                <button class="carousel-next">→</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Мои проекты</h2>
+        <div class="projects-container">
+            <!-- Из JSON -->
+        </div>
+    </section>
+    
+    <section id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <ul class="contact-list">
+            <li>📧 email: почта-почта@gmail.com</li>
+            <li>📱 тел: +7 (t2) номер-номер</li>
+            <li>💻 GitHub: https://github.com/Bougainvilllea</li>
+            <li>📘 VK: vk.com/ВК-ВК</li>
+        </ul>
+        
+        <!-- Форма "обратной" связи -->
+        <button id="openFeedbackForm" class="feedback-btn">Обратная связь</button>
+    </section>
+    
+    <footer>
+        <p>© 2025 Бердникова Елизавета - Простое портфолио студента</p>
+    </footer>
+    
+    <!-- Модальное окно для формы обратной связи -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Форма обратной связи</h3>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </div>
+
+    <!-- Подключаем js файл -->
+    <script src="js/script.js"></script>
+</body>
+</html>

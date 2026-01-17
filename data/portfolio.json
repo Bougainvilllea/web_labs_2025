@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "image": "image/pokemon_dedenne.png",
+            "title": "Pokemon-battle",
+            "description": "Сайт с пакемонами."
+        },
+        {
+            "image": "image/Без имени-22.png",
+            "title": "MetaChild2050",
+            "description": "Дизайн проекта с кибер-детьми."
+        },
+        {
+            "image": "image/2.png",
+            "title": "Enigma",
+            "description": "Реализация шифровальной машины."
+        }
+    ]
+}
