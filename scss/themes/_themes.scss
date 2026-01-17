@@ -1,0 +1,23 @@
+// Темная тема
+[data-theme="dark"] {
+  --primary-color: #8f5d5d;
+  --primary-dark: #a05a5a;
+  --primary-light: #911b1b;
+  --bg-light: #2d3748;
+  --text-color: #6e7885;
+  --white: #1a202c;
+  --surface: #2d3748;
+  --border: #4a5568;
+}
+
+.dark-theme {
+  --primary-color: #742121;
+  --primary-dark: #885151;
+  --primary-light: #925858;
+  --bg-light: #2d3748;
+  --text-color: #465668;
+  --white: #1a202c;
+  --surface: #2d3748;
+  --border: #4a5568;
+}
+

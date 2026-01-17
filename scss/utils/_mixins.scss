@@ -1,0 +1,29 @@
+@mixin border-radius($radius: 10px) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow: 0 4px 8px rgba(0, 0, 0, 0.1)) {
+  box-shadow: $shadow;
+}
+
+@mixin transition($property: all, $duration: 0.3s) {
+  transition: $property $duration;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: 1023px) { @content; }
+  }
+  @if $breakpoint == mobile {
+    @media (max-width: 767px) { @content; }
+  }
+  @if $breakpoint == small-mobile {
+    @media (max-width: 480px) { @content; }
+  }
+}

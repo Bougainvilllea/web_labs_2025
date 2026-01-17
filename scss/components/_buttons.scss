@@ -1,0 +1,50 @@
+.carousel-prev, .carousel-next, .feedback-btn, .submit-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  @include transition(all);
+  
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+}
+
+.feedback-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  @include flex-center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+  z-index: 999;
+  
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+}

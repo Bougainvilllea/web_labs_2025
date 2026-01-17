@@ -1,0 +1,29 @@
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 20px 0 15px;
+  color: $primary-color;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $primary-color;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 15px 0 10px;
+  color: #991e1e;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
