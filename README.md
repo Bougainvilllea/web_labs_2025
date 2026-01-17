@@ -1,1 +1,1 @@
-Лабараторные работы третьего курса(5 семестр)
+https://bougainvilllea.github.io/web_lab5/
